@@ -213,13 +213,17 @@ Hero
 }
 .hero-title .btn {
   background: var(--color-golden);
-  padding: 10px;
+  padding: 5px 7px;
   color: var(--color-black);
   text-transform: capitalize;
   font-weight: 700;
   border-radius: 20px;
   border-color: transparent;
   cursor: pointer;
+  transition: var(--transition);
+}
+.hero-title .btn:hover {
+  color: var(--color-white);
 }
 .hero-img .img {
   width: 150px;
@@ -568,10 +572,13 @@ Footer
   font-size: 1.25rem;
   margin-bottom: 1rem;
   color: var(--color-green);
-  transition: var(--transition);
+  transition: 0.2s;
 }
 .social-links a:hover {
   color: var(--color-golden);
+}
+.social-links a .social-icon:hover {
+  transform: translateY(-10px);
 }
 .footer-contact p {
   text-transform: capitalize;

@@ -19,22 +19,22 @@ const Footer = () => {
         <ul className="social-links">
           <li>
             <a href="https://facebook.com">
-              <FaFacebook />
+              <FaFacebook className="social-icon" />
             </a>
           </li>
           <li>
             <a href="https://twitter.com">
-              <FaTwitter />
+              <FaTwitter className="social-icon" />
             </a>
           </li>
           <li>
             <a href="https://github.com">
-              <FaGithub />
+              <FaGithub className="social-icon" />
             </a>
           </li>
           <li>
             <a href="https://instagram.com">
-              <FaInstagram />
+              <FaInstagram className="social-icon" />
             </a>
           </li>
         </ul>

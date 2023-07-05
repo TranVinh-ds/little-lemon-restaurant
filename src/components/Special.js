@@ -3,13 +3,20 @@ import { FaCartPlus } from 'react-icons/fa';
 import bruchetta from '../icons_assets/bruchetta.jpg';
 import greekSalad from '../icons_assets/greek salad.jpg';
 import lemonDessert from '../icons_assets/lemon dessert.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const Special = () => {
+  const navigate = useNavigate();
+  const loginToggler = () => {
+    navigate('/login');
+  };
   return (
     <section className="section-center special-center">
       <div className="special-title">
         <h2>this weeks specials!</h2>
-        <button className="special-btn">online menu</button>
+        <button className="special-btn" onClick={loginToggler}>
+          online menu
+        </button>
       </div>
       <div className="special-container">
         <article className="special-card">
